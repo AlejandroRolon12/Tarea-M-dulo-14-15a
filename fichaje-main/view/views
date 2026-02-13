@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="fichaje_asistencia_tree" model="ir.ui.view">
+        <field name="name">fichaje.asistencia.tree</field>
+        <field name="model">fichaje.asistencia</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="employee_id"/>
+                <field name="fecha_fichaje"/>
+                <field name="tipo_accion"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="fichaje_asistencia_form" model="ir.ui.view">
+        <field name="name">fichaje.asistencia.form</field>
+        <field name="model">fichaje.asistencia</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="fecha_fichaje"/>
+                        <field name="tipo_accion"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
+
